@@ -1,0 +1,159 @@
+/* FONTS */
+@font-face {
+    font-family: "nevis";
+    src: url("./src/fonts/nevis.eot");
+    src: url("./src/fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("./src/fonts/nevis.woff") format("woff"),
+        url("./src/fonts/nevis.ttf") format("truetype"),
+        url("./src/fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* STYLES */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("./src/img/paven.png");
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(242, 200, 245);
+}
+header a{
+    text-decoration: none;
+}
+header #logo{
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px;
+}
+header img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+}
+header h1{
+    font-family: "nevis";
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: violet;
+    margin-top: 10PX;
+    text-shadow: 0px 2px 1px black;
+    transition: all 300ms;
+}
+header h1 a{
+    text-align: center;
+    font-size: 30px;
+    color: violet;
+}
+header h1:hover{
+    text-shadow: 0px 2px 1px black, 0px 0px 4px purple;
+   
+}
+
+/* NAV MENU */
+nav{
+    width: 100%;
+    height: 50px;
+    padding: 2px 0px 2px 0px;
+    background-color: rgb(176, 149, 177);
+}
+nav > ul{
+    list-style: none;
+    width: 46%;
+    margin: 0 auto;
+}
+nav > ul > li{
+    line-height: 50px;
+    display: inline;
+    float: left;
+    border-right: 1px solid black;
+    transition: all 300ms;
+}
+nav > ul > li > a{
+    display: block;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 2px 1px black;
+    font-family: "nevis";
+    text-decoration: none;
+    transition: all 300ms;
+}
+nav > ul > li:first-child{
+    border-left: 1px solid black;
+}
+nav > ul > li:hover{
+    background-color: white;
+    box-shadow: 0 0 4px blueviolet inset;
+}
+nav > ul > li:hover > a{
+    color: rgb(161, 58, 161);
+    font-size: 22px;
+    text-shadow: 0px 0px 0px black;
+    text-decoration: none;
+}
+/* SUBMENU */
+nav > ul > li > ul{
+    display: none;
+    margin-top: 0px;
+    text-decoration: none;
+    background-color: rgb(248, 166, 176);
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 125px;
+    box-shadow: 0px 2px 2px violet;
+    z-index: 1;
+    
+}
+nav > ul > li > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav > ul > li > ul > li:hover > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+nav ul li:hover ul{
+    display: block;
+}
+
+/* CONTENT */
+#content{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    min-height: 1100px;
+}
+aside{
+    width: 20%;
+    float: left;
+    background-color: white;
+    border: 1px solid rgb(231, 226, 226);
+    box-shadow: 1px 0px 10px black;
+}
+#content a{
+    text-decoration: none;
+}
+.widget{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 5px;
+    border-top: 1px solid rgb(189, 184, 184);
+}
+.widget:first-child{
+    border-top: 0px solid black;
+}
+/* ANIMATIONS */
